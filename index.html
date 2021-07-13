@@ -5,32 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
+  <section class="container">
+    <div class="card">
+      <div class="hero">
+        <div class="main-illustration">
+          <img src="images/illustration-woman-online-mobile.svg" alt="">
+        </div>
+        <div class="illustration-shadow">
+          <img src="images/bg-pattern-mobile.svg" alt="">
+        </div>
+      </div>
+      <div class="faq-content">
+        <h2 class="title">FAQ</h1>
+        <div class="accordion">
+          <h2 class="question">How many team members can I invite?<img class="icon" src="images/icon-arrow-down.svg" alt=""></h2>
+          <article id="answer">
+You can invite up to 2 additional users on the Free plan. There is no limit on 
   team members for the Premium plan.
+          </article>
+        </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class="accordion">
+          <h2 class="question">What is the maximum file upload size?<img class="icon" src="images/icon-arrow-down.svg" alt=""></h2>
+          <article id="answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </article>
+        </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <div class="accordion">
+          <h2 class="question">How do I reset my password?<img class="icon" src="images/icon-arrow-down.svg" alt=""></h2>
+          <article id="answer">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </article>
+        </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div class="accordion">
+          <h2 class="question">Can I cancel my subscription?<img class="icon" src="images/icon-arrow-down.svg" alt=""></h2>
+          <article id="answer">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </article>
+        </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div class="accordion">
+          <h2 class="question">Do you provide additional support?<img class="icon" src="images/icon-arrow-down.svg" alt=""></h2>
+          <article id="answer">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </article>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
