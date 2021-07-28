@@ -25,12 +25,6 @@ body {
   cursor: pointer;
 }
 
-#answer {
-  /* display: none; */
-  color: hsl(240, 6%, 50%);
-  line-height: 1.75rem;
-}
-
 .container {
   /* Placeholder for gradient background */
   display: flex;
@@ -60,12 +54,30 @@ body {
 .icon {
   float: right;
 }
-
+/* Base styles */
 .accordion {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.answer {
+  display: none;
+}
+
+/* Open styles */
+
+.accordion.open .question {
+  font-weight: 700;
+}
+
+.accordion.open .icon {
+  transform: rotate(180deg);
+}
+
+.accordion.open .answer {
+  display: block;
 }
 
 .hero {
